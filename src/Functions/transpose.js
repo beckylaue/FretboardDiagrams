@@ -1,0 +1,754 @@
+function transpose(note, interval) {
+    switch (note) {
+      case "A♭": {
+        switch (interval) {
+          case "♭2":
+            return "B𝄫";
+          case "2":
+            return "B♭";
+          case "♯2":
+            return "B";
+          case "𝄫3":
+            return "C𝄫";
+          case "♭3":
+            return "C♭";
+          case "3":
+            return "C";
+          case "♯3":
+            return "C♯";
+          case "♭4":
+            return "D𝄫";
+          case "4":
+            return "D♭";
+          case "♯4":
+            return "D";
+          case "♭5":
+            return "E𝄫";
+          case "5":
+            return "E♭";
+          case "♯5":
+            return "E";
+          case "𝄫6":
+            return "F𝄫";
+          case "♭6":
+            return "F♭";
+          case "6":
+            return "F";
+          case "♯6":
+            return "F♯";
+          case "𝄫7":
+            return "G𝄫";
+          case "♭7":
+            return "G♭";
+          case "7":
+            return "G";
+        }
+      }
+      case "A": {
+        switch (interval) {
+          case "♭2":
+            return "B♭";
+          case "2":
+            return "B";
+          case "♯2":
+            return "B♯";
+          case "𝄫3":
+            return "C♭";
+          case "♭3":
+            return "C";
+          case "3":
+            return "C♯";
+          case "♯3":
+            return "C𝄪";
+          case "♭4":
+            return "D♭";
+          case "4":
+            return "D";
+          case "♯4":
+            return "D♯";
+          case "♭5":
+            return "E♭";
+          case "5":
+            return "E";
+          case "♯5":
+            return "E♯";
+          case "𝄫6":
+            return "F♭";
+          case "♭6":
+            return "F";
+          case "6":
+            return "F♯";
+          case "♯6":
+            return "F𝄪";
+          case "𝄫7":
+            return "G♭";
+          case "♭7":
+            return "G";
+          case "7":
+            return "G♯";
+        }
+      }
+      case "A♯": {
+        switch (interval) {
+          case "♭2":
+            return "B";
+          case "2":
+            return "B♯";
+          case "♯2":
+            return "B𝄪";
+          case "𝄫3":
+            return "C";
+          case "♭3":
+            return "C♯";
+          case "3":
+            return "C𝄪";
+          case "♯3":
+            return "C♯𝄪";
+          case "♭4":
+            return "D";
+          case "4":
+            return "D♯";
+          case "♯4":
+            return "D𝄪";
+          case "♭5":
+            return "E";
+          case "5":
+            return "E♯";
+          case "♯5":
+            return "E𝄪";
+          case "𝄫6":
+            return "F";
+          case "♭6":
+            return "F♯";
+          case "6":
+            return "F𝄪";
+          case "♯6":
+            return "F♯𝄪";
+          case "𝄫7":
+            return "G";
+          case "♭7":
+            return "G♯";
+          case "7":
+            return "G𝄪";
+        }
+      }
+      case "B♭": {
+        switch (interval) {
+          case "♭2":
+            return "C♭";
+          case "2":
+            return "C";
+          case "♯2":
+            return "C♯";
+          case "𝄫3":
+            return "D𝄫";
+          case "♭3":
+            return "D♭";
+          case "3":
+            return "D";
+          case "♯3":
+            return "D♯";
+          case "♭4":
+            return "E𝄫";
+          case "4":
+            return "E♭";
+          case "♯4":
+            return "E";
+          case "♭5":
+            return "F♭";
+          case "5":
+            return "F";
+          case "♯5":
+            return "F♯";
+          case "𝄫6":
+            return "G𝄫";
+          case "♭6":
+            return "G♭";
+          case "6":
+            return "G";
+          case "♯6":
+            return "G♯";
+          case "𝄫7":
+            return "A𝄫";
+          case "♭7":
+            return "A♭";
+          case "7":
+            return "A";
+        }
+      }
+      case "B": {
+        switch (interval) {
+          case "♭2":
+            return "C";
+          case "2":
+            return "C♯";
+          case "♯2":
+            return "C𝄪";
+          case "𝄫3":
+            return "D♭";
+          case "♭3":
+            return "D";
+          case "3":
+            return "D♯";
+          case "♯3":
+            return "D𝄪";
+          case "♭4":
+            return "E♭";
+          case "4":
+            return "E";
+          case "♯4":
+            return "E♯";
+          case "♭5":
+            return "F";
+          case "5":
+            return "F♯";
+          case "♯5":
+            return "F𝄪";
+          case "𝄫6":
+            return "G♭";
+          case "♭6":
+            return "G";
+          case "6":
+            return "G♯";
+          case "♯6":
+            return "G𝄪";
+          case "𝄫7":
+            return "A♭";
+          case "♭7":
+            return "A";
+          case "7":
+            return "A♯";
+        }
+      }
+      case "C": {
+        switch (interval) {
+          case "♭2":
+            return "D♭";
+          case "2":
+            return "D";
+          case "♯2":
+            return "D♯";
+          case "𝄫3":
+            return "E𝄫";
+          case "♭3":
+            return "E♭";
+          case "3":
+            return "E";
+          case "♯3":
+            return "E♯";
+          case "♭4":
+            return "F♭";
+          case "4":
+            return "F";
+          case "♯4":
+            return "F♯";
+          case "♭5":
+            return "G♭";
+          case "5":
+            return "G";
+          case "♯5":
+            return "G♯";
+          case "𝄫6":
+            return "A𝄫";
+          case "♭6":
+            return "A♭";
+          case "6":
+            return "A";
+          case "♯6":
+            return "A♯";
+          case "𝄫7":
+            return "B𝄫";
+          case "♭7":
+            return "B♭";
+          case "7":
+            return "B";
+        }
+      }
+      case "C♯": {
+        switch (interval) {
+          case "♭2":
+            return "D";
+          case "2":
+            return "D♯";
+          case "♯2":
+            return "D𝄪";
+          case "𝄫3":
+            return "E♭";
+          case "♭3":
+            return "E";
+          case "3":
+            return "E♯";
+          case "♯3":
+            return "E𝄪";
+          case "♭4":
+            return "F";
+          case "4":
+            return "F♯";
+          case "♯4":
+            return "F𝄪";
+          case "♭5":
+            return "G";
+          case "5":
+            return "G♯";
+          case "♯5":
+            return "G𝄪";
+          case "𝄫6":
+            return "A♭";
+          case "♭6":
+            return "A";
+          case "6":
+            return "A♯";
+          case "♯6":
+            return "A𝄪";
+          case "𝄫7":
+            return "B♭";
+          case "♭7":
+            return "B";
+          case "7":
+            return "B♯";
+        }
+      }
+      case "D♭": {
+        switch (interval) {
+          case "♭2":
+            return "E𝄫";
+          case "2":
+            return "E♭";
+          case "♯2":
+            return "E";
+          case "𝄫3":
+            return "F𝄫";
+          case "♭3":
+            return "F♭";
+          case "3":
+            return "F";
+          case "♯3":
+            return "F♯";
+          case "♭4":
+            return "G𝄫";
+          case "4":
+            return "G♭";
+          case "♯4":
+            return "G";
+          case "♭5":
+            return "A𝄫";
+          case "5":
+            return "A♭";
+          case "♯5":
+            return "A";
+          case "𝄫6":
+            return "B♭𝄫";
+          case "♭6":
+            return "B𝄫";
+          case "6":
+            return "B♭";
+          case "♯6":
+            return "B";
+          case "𝄫7":
+            return "C𝄫";
+          case "♭7":
+            return "C♭";
+          case "7":
+            return "C";
+        }
+      }
+      case "D": {
+        switch (interval) {
+          case "♭2":
+            return "E♭";
+          case "2":
+            return "E";
+          case "♯2":
+            return "E♯";
+          case "𝄫3":
+            return "F♭";
+          case "♭3":
+            return "F";
+          case "3":
+            return "F♯";
+          case "♯3":
+            return "F𝄪";
+          case "♭4":
+            return "G♭";
+          case "4":
+            return "G";
+          case "♯4":
+            return "G♯";
+          case "♭5":
+            return "A♭";
+          case "5":
+            return "A";
+          case "♯5":
+            return "A♯";
+          case "𝄫6":
+            return "B𝄫";
+          case "♭6":
+            return "B♭";
+          case "6":
+            return "B";
+          case "♯6":
+            return "B♯";
+          case "𝄫7":
+            return "C♭";
+          case "♭7":
+            return "C";
+          case "7":
+            return "C♯";
+        }
+      }
+      case "D♯": {
+        switch (interval) {
+          case "♭2":
+            return "E";
+          case "2":
+            return "E♯";
+          case "♯2":
+            return "E𝄪";
+          case "𝄫3":
+            return "F";
+          case "♭3":
+            return "F♯";
+          case "3":
+            return "F𝄪";
+          case "♯3":
+            return "F♯𝄪";
+          case "♭4":
+            return "G";
+          case "4":
+            return "G♯";
+          case "♯4":
+            return "G𝄪";
+          case "♭5":
+            return "A";
+          case "5":
+            return "A♯";
+          case "♯5":
+            return "A𝄪";
+          case "𝄫6":
+            return "B♭";
+          case "♭6":
+            return "B";
+          case "6":
+            return "B♯";
+          case "♯6":
+            return "B𝄪";
+          case "𝄫7":
+            return "C";
+          case "♭7":
+            return "C♯";
+          case "7":
+            return "C𝄪";
+        }
+      }
+      case "E♭": {
+        switch (interval) {
+          case "♭2":
+            return "F♭";
+          case "2":
+            return "F";
+          case "♯2":
+            return "F♯";
+          case "𝄫3":
+            return "G𝄫";
+          case "♭3":
+            return "G♭";
+          case "3":
+            return "G";
+          case "♯3":
+            return "G♯";
+          case "♭4":
+            return "A𝄫";
+          case "4":
+            return "A♭";
+          case "♯4":
+            return "A";
+          case "♭5":
+            return "B𝄫";
+          case "5":
+            return "B♭";
+          case "♯5":
+            return "B";
+          case "𝄫6":
+            return "C𝄫";
+          case "♭6":
+            return "C♭";
+          case "6":
+            return "C";
+          case "♯6":
+            return "C♯";
+          case "𝄫7":
+            return "D𝄫";
+          case "♭7":
+            return "D♭";
+          case "7":
+            return "D";
+        }
+      }
+      case "E": {
+        switch (interval) {
+          case "♭2":
+            return "F";
+          case "2":
+            return "F♯";
+          case "♯2":
+            return "F𝄪";
+          case "𝄫3":
+            return "G♭";
+          case "♭3":
+            return "G";
+          case "3":
+            return "G♯";
+          case "♯3":
+            return "G𝄪";
+          case "♭4":
+            return "A♭";
+          case "4":
+            return "A";
+          case "♯4":
+            return "A♯";
+          case "♭5":
+            return "B♭";
+          case "5":
+            return "B";
+          case "♯5":
+            return "B♯";
+          case "𝄫6":
+            return "C♭";
+          case "♭6":
+            return "C";
+          case "6":
+            return "C♯";
+          case "♯6":
+            return "C𝄪";
+          case "𝄫7":
+            return "D♭";
+          case "♭7":
+            return "D";
+          case "7":
+            return "D♯";
+        }
+      }
+      case "F": {
+        switch (interval) {
+          case "♭2":
+            return "G♭";
+          case "2":
+            return "G";
+          case "♯2":
+            return "G♯";
+          case "𝄫3":
+            return "A𝄫";
+          case "♭3":
+            return "A♭";
+          case "3":
+            return "A";
+          case "♯3":
+            return "A♯";
+          case "♭4":
+            return "B𝄫";
+          case "4":
+            return "B♭";
+          case "♯4":
+            return "B";
+          case "♭5":
+            return "C♭";
+          case "5":
+            return "C";
+          case "♯5":
+            return "C♯";
+          case "𝄫6":
+            return "D𝄫";
+          case "♭6":
+            return "D♭";
+          case "6":
+            return "D";
+          case "♯6":
+            return "D♯";
+          case "𝄫7":
+            return "E𝄫";
+          case "♭7":
+            return "E♭";
+          case "7":
+            return "E";
+        }
+      }
+      case "F♯": {
+        switch (interval) {
+          case "♭2":
+            return "G";
+          case "2":
+            return "G♯";
+          case "♯2":
+            return "G𝄪";
+          case "𝄫3":
+            return "A♭";
+          case "♭3":
+            return "A";
+          case "3":
+            return "A♯";
+          case "♯3":
+            return "A𝄪";
+          case "♭4":
+            return "B♭";
+          case "4":
+            return "B";
+          case "♯4":
+            return "B♯";
+          case "♭5":
+            return "C";
+          case "5":
+            return "C♯";
+          case "♯5":
+            return "C𝄪";
+          case "𝄫6":
+            return "D♭";
+          case "♭6":
+            return "D";
+          case "6":
+            return "D♯";
+          case "♯6":
+            return "D𝄪";
+          case "𝄫7":
+            return "E♭";
+          case "♭7":
+            return "E";
+          case "7":
+            return "E♯";
+        }
+      }
+      case "G♭": {
+        switch (interval) {
+          case "♭2":
+            return "A𝄫";
+          case "2":
+            return "A♭";
+          case "♯2":
+            return "A";
+          case "𝄫3":
+            return "B♭𝄫";
+          case "♭3":
+            return "B𝄫";
+          case "3":
+            return "B♭";
+          case "♯3":
+            return "B";
+          case "♭4":
+            return "C𝄫";
+          case "4":
+            return "C♭";
+          case "♯4":
+            return "C";
+          case "♭5":
+            return "D𝄫";
+          case "5":
+            return "D♭";
+          case "♯5":
+            return "D";
+          case "𝄫6":
+            return "E♭𝄫";
+          case "♭6":
+            return "E𝄫";
+          case "6":
+            return "E♭";
+          case "♯6":
+            return "E";
+          case "𝄫7":
+            return "F𝄫";
+          case "♭7":
+            return "F♭";
+          case "7":
+            return "F";
+        }
+      }
+      case "G": {
+        switch (interval) {
+          case "♭2":
+            return "A♭";
+          case "2":
+            return "A";
+          case "♯2":
+            return "A♯";
+          case "𝄫3":
+            return "B𝄫";
+          case "♭3":
+            return "B♭";
+          case "3":
+            return "B";
+          case "♯3":
+            return "B♯";
+          case "♭4":
+            return "C♭";
+          case "4":
+            return "C";
+          case "♯4":
+            return "C♯";
+          case "♭5":
+            return "D♭";
+          case "5":
+            return "D";
+          case "♯5":
+            return "D♯";
+          case "𝄫6":
+            return "E𝄫";
+          case "♭6":
+            return "E♭";
+          case "6":
+            return "E";
+          case "♯6":
+            return "E♯";
+          case "𝄫7":
+            return "F♭";
+          case "♭7":
+            return "F";
+          case "7":
+            return "F♯";
+        }
+      }
+      case "G♯": {
+        switch (interval) {
+          case "♭2":
+            return "A";
+          case "2":
+            return "A♯";
+          case "♯2":
+            return "A𝄪";
+          case "𝄫3":
+            return "B♭";
+          case "♭3":
+            return "B";
+          case "3":
+            return "B♯";
+          case "♯3":
+            return "B𝄪";
+          case "♭4":
+            return "C";
+          case "4":
+            return "C♯";
+          case "♯4":
+            return "C𝄪";
+          case "♭5":
+            return "D";
+          case "5":
+            return "D♯";
+          case "♯5":
+            return "D𝄪";
+          case "𝄫6":
+            return "E♭";
+          case "♭6":
+            return "E";
+          case "6":
+            return "E♯";
+          case "♯6":
+            return "E𝄪";
+          case "𝄫7":
+            return "F";
+          case "♭7":
+            return "F♯";
+          case "7":
+            return "F𝄪";
+        }
+      }
+    }
+  }
+  
+  export default transpose;
